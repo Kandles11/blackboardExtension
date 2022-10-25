@@ -3,13 +3,16 @@
     "name": "BlackboardExtensions",
     "version": "1.0",
     "description": "A BlackBoard enhancement suite.",
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
     "content_scripts": [
         {
             "js": ["scripts/content.js"],
             "matches" : [
-                "https://elearning.utdallas.edu/ultra/course"
-            ]
-        }
+                "https://*/ultra/*"
+            ]        }
     ]
+
     
   }
